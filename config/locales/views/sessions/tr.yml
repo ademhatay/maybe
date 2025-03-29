@@ -1,0 +1,14 @@
+---
+en:
+  sessions:
+    create:
+      invalid_credentials: Geçersiz kullanıcı adı veya şifre.
+    destroy:
+      logout_successful: Başarıyla giriş yaptınız.
+    new:
+      email: Kullanıcı Adı
+      email_placeholder: defter-e@gmail.com
+      forgot_password: Şifremi Unuttum
+      password: Şifre
+      submit: Giriş Yap
+      title: Hesabına Giriş Yap

@@ -1,0 +1,13 @@
+---
+en:
+  layouts:
+    auth:
+      existing_account: Zaten bir hesabın var mı?
+      no_account: Yeni misin?
+      sign_in: Giriş Yap
+      sign_up: Hesap Oluştur
+      your_account: Senin Hesabın
+    shared:
+      footer:
+        privacy_policy: Gizlilik Politikası
+        terms_of_service: Hizmet Şartları
