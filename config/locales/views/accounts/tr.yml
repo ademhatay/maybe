@@ -1,0 +1,61 @@
+---
+en:
+  accounts:
+    account:
+      troubleshoot: Hata giderme
+    chart:
+      no_change: değişiklik yok
+    create:
+      success: "%{type} hesabı oluşturuldu"
+    destroy:
+      success: "%{type} hesabı silinmek üzere planlandı"
+    empty:
+      empty_message: Hesap eklemek için bağlantı, içe aktarma veya manuel olarak girme yöntemlerinden birini kullanın.
+      new_account: Yeni hesap
+      no_accounts: Henüz hesap yok
+    form:
+      balance: Mevcut bakiye
+      name_label: Hesap adı
+      name_placeholder: Örnek hesap adı
+    index:
+      accounts: Hesaplar
+      manual_accounts:
+        other_accounts: Diğer hesaplar
+      new_account: Yeni hesap
+      sync: Tümünü senkronize et
+    new:
+      import_accounts: Hesapları içe aktar
+      method_selector:
+        connected_entry: Bağlantılı hesap
+        connected_entry_eu: Bağlantılı AB hesabı
+        manual_entry: Manuel hesap bakiyesi gir
+        title: Nasıl eklemek istersiniz?
+      title: Ne eklemek istersiniz?
+    show:
+      activity:
+        amount: Miktar
+        balance: Bakiye
+        date:  Tarih
+        entries: entries
+        entry: entry
+        new: Yeni
+        new_balance: Yeni bakiye
+        new_transaction: Yeni işlem
+        no_entries: Kayıt bulunamadı
+        title: Etkinlik
+      chart:
+        balance: Bakiye
+        owed: Borçlu olunan miktar
+      menu:
+        confirm_accept: "%{name}'i sil"
+        confirm_body_html: "<p>Bu hesabı silerek, değer geçmişini sileceksiniz ve bu durum, genel hesaplarınızın çeşitli yönlerini etkileyecektir. Bu işlem, net değer hesaplamalarınızı ve hesap grafiklerinizi doğrudan etkileyecektir.</p><br /> <p>Silindikten sonra, hesap bilgilerini geri yüklemenin bir yolu yoktur çünkü yeni bir hesap olarak eklemeniz gerekecek.</p>"
+        confirm_title: Hesabı sil?
+        edit: Düzenle
+        import: İşlemleri içe aktar
+        manage: Hesapları yönet
+    update:
+      success: "%{type} hesabı güncellendi"
+  email_confirmations:
+    new:
+      invalid_token: Geçersiz veya süresi dolmuş onay bağlantısı.
+      success_login: Hesabınız başarıyla onaylandı. Şimdi giriş yapabilirsiniz.
