@@ -12,64 +12,64 @@ class Period
   PERIODS = {
     "last_day" => {
       date_range: [ 1.day.ago.to_date, Date.current ],
-      label_short: "1D",
-      label: "Last Day",
-      comparison_label: "vs. yesterday"
+      label_short: "1G",
+      label: "Son 1 Gün",
+      comparison_label: "Geçmiş 1 güne göre"
     },
     "current_week" => {
       date_range: [ Date.current.beginning_of_week, Date.current ],
-      label_short: "WTD",
-      label: "Current Week",
-      comparison_label: "vs. start of week"
+      label_short: "ŞimdikiHafta",
+      label: "Şimdiki Hafta",
+      comparison_label: "Hafta başından beri"
     },
     "last_7_days" => {
       date_range: [ 7.days.ago.to_date, Date.current ],
-      label_short: "7D",
+      label_short: "7G",
       label: "Last 7 Days",
-      comparison_label: "vs. last week"
+      comparison_label: "Geçmiş 7 güne göre"
     },
     "current_month" => {
       date_range: [ Date.current.beginning_of_month, Date.current ],
-      label_short: "MTD",
-      label: "Current Month",
-      comparison_label: "vs. start of month"
+      label_short: "BuAy",
+      label: "Şimdiki Ay",
+      comparison_label: "Ay başından beri"
     },
     "last_30_days" => {
       date_range: [ 30.days.ago.to_date, Date.current ],
-      label_short: "30D",
-      label: "Last 30 Days",
-      comparison_label: "vs. last month"
+      label_short: "30G",
+      label: "Son 30 Gün",
+      comparison_label: "Geçmiş 30 güne göre"
     },
     "last_90_days" => {
       date_range: [ 90.days.ago.to_date, Date.current ],
-      label_short: "90D",
-      label: "Last 90 Days",
-      comparison_label: "vs. last quarter"
+      label_short: "90G",
+      label: "Son 90 Gün",
+      comparison_label: "Geçmiş 90 güne göre"
     },
     "current_year" => {
       date_range: [ Date.current.beginning_of_year, Date.current ],
-      label_short: "YTD",
-      label: "Current Year",
-      comparison_label: "vs. start of year"
+      label_short: "BuYıl",
+      label: "Şimdiki Yıl",
+      comparison_label: "Yıl başından beri"
     },
     "last_365_days" => {
       date_range: [ 365.days.ago.to_date, Date.current ],
-      label_short: "365D",
-      label: "Last 365 Days",
-      comparison_label: "vs. 1 year ago"
+      label_short: "365G",
+      label: "Son 365 Gün",
+      comparison_label: "Geçmiş 365 güne göre"
     },
     "last_5_years" => {
       date_range: [ 5.years.ago.to_date, Date.current ],
       label_short: "5Y",
-      label: "Last 5 Years",
-      comparison_label: "vs. 5 years ago"
+      label: "Son 5 Yıl",
+      comparison_label: "Geçmiş 5 yıla göre"
     }
   }
 
   class << self
     def from_key(key)
       unless PERIODS.key?(key)
-        raise InvalidKeyError, "Invalid period key: #{key}"
+        raise InvalidKeyError, "Geçersiz anahtar: #{key}. Geçerli anahtarlar: #{PERIODS.keys.join(', ')}"
       end
 
       start_date, end_date = PERIODS[key].fetch(:date_range)
@@ -118,9 +118,9 @@ class Period
 
   def interval
     if days > 366
-      "1 week"
+      "1 hafta"
     else
-      "1 day"
+      "1 gün"
     end
   end
 
@@ -128,7 +128,7 @@ class Period
     if key_metadata
       key_metadata.fetch(:label)
     else
-      "Custom Period"
+      "Özel Aralık"
     end
   end
 
@@ -136,7 +136,7 @@ class Period
     if key_metadata
       key_metadata.fetch(:label_short)
     else
-      "Custom"
+      "Özel"
     end
   end
 
@@ -156,11 +156,11 @@ class Period
     def must_be_valid_date_range
       return if start_date.nil? || end_date.nil?
       unless start_date.is_a?(Date) && end_date.is_a?(Date)
-        errors.add(:start_date, "must be a valid date, got #{start_date.inspect}")
-        errors.add(:end_date, "must be a valid date, got #{end_date.inspect}")
+        errors.add(:start_date, "geçersiz tarih, #{start_date.inspect}")
+        errors.add(:end_date, "geçersiz tarih, #{end_date.inspect}")
         return
       end
 
-      errors.add(:start_date, "must be before end date") if start_date > end_date
+      errors.add(:start_date, "başlangıç tarihi, bitiş tarihinden büyük olamaz") if start_date > end_date
     end
 end
