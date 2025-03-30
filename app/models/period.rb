@@ -118,9 +118,9 @@ class Period
 
   def interval
     if days > 366
-      "1 hafta"
+      "1 week"
     else
-      "1 gün"
+      "1 day"
     end
   end
 
