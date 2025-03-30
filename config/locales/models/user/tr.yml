@@ -1,0 +1,20 @@
+---
+en:
+  activerecord:
+    attributes:
+      user:
+        email: Email
+        family: Şirket
+        family_id: Şirket ID
+        first_name: İsim
+        last_name: Soyisim
+        password: Şifre
+        password_confirmation: Şifre Tekrar
+    errors:
+      models:
+        user:
+          attributes:
+            base:
+              cannot_deactivate_admin_with_other_users: Admin, diğer kullanıcılar varken hesabı silemez. Lütfen önce tüm üyeleri silin.
+            profile_image:
+              invalid_file_size: dosya boyutu %{max_megabytes}MB'den küçük olmalıdır
