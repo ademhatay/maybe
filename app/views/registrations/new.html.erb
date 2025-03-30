@@ -30,10 +30,10 @@
       autocomplete: "email",
       required: "required",
       placeholder: "defter-e@gmail.com",
-      label: true,
+      label: t(".email"),
       disabled: @invitation.present? %>
-  <%= form.password_field :password, autocomplete: "new-password", required: "required", label: true, maxlength: 72 %>
-  <%= form.password_field :password_confirmation, autocomplete: "new-password", required: "required", label: true %>
+  <%= form.password_field :password, autocomplete: "new-password", required: "required", label: t(".password"), maxlength: 72 %>
+  <%= form.password_field :password_confirmation, autocomplete: "new-password", required: "required", label: t(".password_confirmation") %>
   <% if invite_code_required? && !@invitation %>
     <%= form.text_field :invite_code, required: "required", label: true, value: params[:invite] %>
   <% end %>
