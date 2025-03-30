@@ -1,0 +1,23 @@
+---
+en:
+  helpers:
+    label:
+      user:
+        invite_code: Davet Kodu
+    submit:
+      user:
+        create: Devam
+  registrations:
+    create:
+      failure: Kayıt olurken bir sorun oluştu.
+      invalid_invite_code: Geçersiz davet kodu, lütfen tekrar deneyin.
+      success: Kayıt işleminiz başarıyla tamamlandı.
+    new:
+      invitation_message: "%{inviter} sizi %{role} olarak davet etti"
+      join_family_title: "Katıl %{family}"
+      role_admin: yönetici
+      role_member: üye
+      submit: Hesap oluştur
+      title: Hesabınızı oluşturun
+      welcome_body: Başlamak için yeni bir hesap oluşturmalısınız. Ardından uygulama içinde ek ayarları yapılandırabileceksiniz.
+      welcome_title:  "defter-e hoş geldiniz!"
