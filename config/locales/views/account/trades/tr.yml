@@ -1,0 +1,39 @@
+---
+en:
+  account:
+    trades:
+      form:
+        account: Transfer hesabı (isteğe bağlı)
+        account_prompt: Hesap arama
+        amount: Tutar
+        holding: Sembol
+        price: Hisse başına fiyat
+        qty: Miktar
+        submit: İşlem ekle
+        ticker_placeholder: AAPL
+        type: Tip
+      header:
+        buy: Satın al
+        current_market_price_label: Güncel Piyasa Fiyatı
+        overview: Genel Bakış
+        purchase_price_label: Alış Fiyatı
+        purchase_qty_label: Alış Miktarı
+        sell: Sat
+        symbol_label: Sembol
+        total_return_label: Gerçekleşmemiş kazanç/zayıf
+      new:
+        title: Yeni işlem
+      show:
+        additional: Ekstra
+        cost_per_share_label: Hisse başına maliyet
+        date_label: Tarih
+        delete: Sil
+        delete_subtitle: Bu işlem geri alınamaz
+        delete_title: İşlemi sil
+        details: Ayrıntılar
+        exclude_subtitle: Bu işlem raporlarda ve hesaplamalarda dahil edilmeyecek
+        exclude_title: Raporlardan dışla
+        note_label: Not
+        note_placeholder: Ekstra notları buraya ekleyin...
+        quantity_label: Miktar
+        settings: Ayarlar

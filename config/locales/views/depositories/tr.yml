@@ -1,0 +1,10 @@
+---
+en:
+  depositories:
+    edit:
+      edit: Düzenle %{account}
+    form:
+      none: Yok
+      subtype_prompt: Hesap türünü seçin
+    new:
+      title: Hesap bakiyesini girin

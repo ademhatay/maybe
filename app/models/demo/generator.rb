@@ -248,15 +248,15 @@ class Demo::Generator
         create_transaction! \
           account: checking,
           amount: Faker::Number.negative(from: -2000, to: -500),
-          name: "Income",
-          category: family.categories.find_by(name: "Income")
+          name: "Gelir",
+          category: family.categories.find_by(name: "Gelir")
       end
 
       # Then create expenses that won't exceed the income
       200.times do
         create_transaction! \
           account: checking,
-          name: "Expense",
+          name: "Gider",
           amount: Faker::Number.positive(from: 8, to: 500)
       end
     end
@@ -264,7 +264,7 @@ class Demo::Generator
     def create_savings_account!(family)
       savings = family.accounts.create! \
         accountable: Depository.new,
-        name: "Demo Savings",
+        name: "Demo Varlık",
         balance: 40000,
         currency: "USD",
         subtype: "savings"
@@ -276,7 +276,7 @@ class Demo::Generator
           amount: Faker::Number.negative(from: -3000, to: -1000),
           tags: [ family.tags.find_by(name: "Emergency Fund") ],
           category: family.categories.find_by(name: "Income"),
-          name: "Income"
+          name: "Gelir"
       end
 
       # Add some smaller withdrawals that won't exceed the deposits
@@ -284,7 +284,7 @@ class Demo::Generator
         create_transaction! \
           account: savings,
           amount: Faker::Number.positive(from: 100, to: 1000),
-          name: "Savings Withdrawal"
+          name: "Para çekme"
       end
     end
 
@@ -297,28 +297,28 @@ class Demo::Generator
         account: checking,
         date: 1.day.ago.to_date,
         amount: 100,
-        name: "Credit Card Payment"
+        name: "Kredi kartı ödemesi"
       )
 
       create_transaction!(
         account: credit_card,
         date: 1.day.ago.to_date,
         amount: -100,
-        name: "Credit Card Payment"
+        name: "Kredi kartı ödemesi"
       )
 
       create_transaction!(
         account: checking,
         date: 3.days.ago.to_date,
         amount: 500,
-        name: "Transfer to investment"
+        name: "Yatırım hesabına transfer"
       )
 
       create_transaction!(
         account: investment,
         date: 2.days.ago.to_date,
         amount: -500,
-        name: "Transfer from checking"
+        name: "Checking'ten yatırım hesabına transfer"
       )
     end
 
@@ -389,7 +389,7 @@ class Demo::Generator
     def create_house_and_mortgage!(family)
       house = family.accounts.create! \
         accountable: Property.new,
-        name: "123 Maybe Way",
+        name: "Üstün Sokak 123",
         balance: 560000,
         currency: "USD"
 
@@ -399,7 +399,7 @@ class Demo::Generator
 
       mortgage = family.accounts.create! \
         accountable: Loan.new,
-        name: "Mortgage",
+        name: "Ev kredisi",
         balance: 495000,
         currency: "USD"
 
@@ -411,7 +411,7 @@ class Demo::Generator
     def create_car_and_loan!(family)
       vehicle = family.accounts.create! \
         accountable: Vehicle.new,
-        name: "Honda Accord",
+        name: "Toyota Corolla",
         balance: 18000,
         currency: "USD"
 
@@ -419,7 +419,7 @@ class Demo::Generator
 
       loan = family.accounts.create! \
         accountable: Loan.new,
-        name: "Car Loan",
+        name: "Araba kredisi",
         balance: 8000,
         currency: "USD"
 
@@ -429,13 +429,13 @@ class Demo::Generator
     def create_other_accounts!(family)
       other_asset = family.accounts.create! \
         accountable: OtherAsset.new,
-        name: "Other Asset",
+        name: "Diğer varlık",
         balance: 10000,
         currency: "USD"
 
       other_liability = family.accounts.create! \
         accountable: OtherLiability.new,
-        name: "Other Liability",
+        name: "Diğer borç",
         balance: 5000,
         currency: "USD"
 

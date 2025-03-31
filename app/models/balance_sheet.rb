@@ -25,13 +25,13 @@ class BalanceSheet
     [
       ClassificationGroup.new(
         key: "asset",
-        display_name: "Assets",
+        display_name: "Varlıklar",
         icon: "blocks",
         account_groups: account_groups("asset")
       ),
       ClassificationGroup.new(
         key: "liability",
-        display_name: "Debts",
+        display_name: "Borçlar",
         icon: "scale",
         account_groups: account_groups("liability")
       )

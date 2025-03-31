@@ -1,0 +1,13 @@
+---
+en:
+  activemodel:
+    errors:
+      models:
+        trend:
+          attributes:
+            current:
+              must_be_of_the_same_type_as_previous: önceki ile aynı türde olmalıdır
+              must_be_of_type_money_numeric_or_nil: Para, Sayısal veya boş değer türünde olmalıdır
+            previous:
+              must_be_of_the_same_type_as_current: mevcut ile aynı türde olmalıdır
+              must_be_of_type_money_numeric_or_nil: Para, Sayısal veya boş değer türünde olmalıdır 

@@ -13,16 +13,16 @@
 
     <div data-controller="tabs" data-tabs-active-class="bg-container" data-tabs-default-tab-value="csv-paste-tab">
       <div class="flex justify-center mb-4">
-        <div class="tab-item-active rounded-lg inline-flex p-1 space-x-2 text-sm text-primary font-medium">
-          <button type="button" data-id="csv-paste-tab" class="p-2 rounded-lg" data-tabs-target="btn" data-action="click->tabs#select">Copy & Paste</button>
-          <button type="button" data-id="csv-upload-tab" class="p-2 rounded-lg" data-tabs-target="btn" data-action="click->tabs#select">Upload CSV</button>
+        <div class="bg-gray-50 rounded-lg inline-flex p-1 space-x-2 text-sm text-primary font-medium">
+          <button type="button" data-id="csv-paste-tab" class="p-2 rounded-lg" data-tabs-target="btn" data-action="click->tabs#select">Kopyala Yapıştır</button>
+          <button type="button" data-id="csv-upload-tab" class="p-2 rounded-lg" data-tabs-target="btn" data-action="click->tabs#select">CSV Dosyası Yükle</button>
         </div>
       </div>
 
       <% ["csv-paste-tab", "csv-upload-tab"].each do |tab| %>
         <%= tag.div id: tab, data: { tabs_target: "tab" }, class: tab == "csv-upload-tab" ? "hidden" : "" do %>
           <%= styled_form_with model: @import, scope: :import, url: import_upload_path(@import), multipart: true, class: "space-y-2" do |form| %>
-            <%= form.select :col_sep, Import::SEPARATORS, label: true %>
+            <%= form.select :col_sep, Import::SEPARATORS, label: "Ayraç" %>
 
             <% if @import.type == "TransactionImport" || @import.type == "TradeImport" %>
               <%= form.select :account_id, @import.family.accounts.pluck(:name, :id), { label: "Account (optional)", include_blank: "Multi-account import", selected: @import.account_id } %>
@@ -32,7 +32,7 @@
               <%= form.text_area :raw_file_str,
                        rows: 10,
                        required: true,
-                       placeholder: "Paste your CSV file contents here",
+                       placeholder: "CSV içeriğini buraya yapıştırın",
                        "data-auto-submit-form-target": "auto" %>
             <% else %>
               <label for="import_csv_file" class="flex flex-col items-center justify-center w-full h-56 border-2 border-secondary border-dashed rounded-lg cursor-pointer bg-container-inset">
@@ -42,7 +42,7 @@
               </label>
             <% end %>
 
-            <%= form.submit "Upload CSV", disabled: @import.complete? %>
+            <%= form.submit "CSV Dosyası Yükleyin", disabled: @import.complete? %>
           <% end %>
         <% end %>
       <% end %>

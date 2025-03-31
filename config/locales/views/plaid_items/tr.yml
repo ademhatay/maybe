@@ -1,0 +1,23 @@
+---
+en:
+  plaid_items:
+    create:
+      success: Hesap başarıyla bağlandı. Lütfen hesapların senkronize olana kadar bekleyin.
+    destroy:
+      success: Hesaplar silme işlemi planlandı.
+    plaid_item:
+      add_new: Yeni bağlantı ekle
+      confirm_accept: Kurum sil
+      confirm_body: Bu, bu gruptaki tüm hesapları ve ilişkili tüm verileri siler.
+      confirm_title: Kurum sil?
+      connection_lost: Bağlantı kaybedildi
+      connection_lost_description: Bu bağlantı artık geçerli değil. Bu bağlantıyı silip tekrar eklemeniz gerekecek.
+      delete: Sil
+      error: Veri senkronizasyonunda hata oluştu
+      no_accounts_description: Bu finansal kurumdan hesap yüklenemedi.
+      no_accounts_title: Hesap yok
+      requires_update: Güncelleme gerekiyor
+      status: Son senkronizasyon %{timestamp} önce
+      status_never: Veri senkronizasyonu gerekiyor
+      syncing: Senkronize ediliyor...
+      update: Bağlantıyı güncelle

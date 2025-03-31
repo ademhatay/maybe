@@ -1,0 +1,57 @@
+---
+en:
+  account:
+    transactions:
+      bulk_delete:
+        success: "%{count} işlemler silindi"
+      bulk_edit:
+        cancel: İptal
+        category_label: Kategori
+        category_placeholder: Kategori seçin
+        date_label: Tarih
+        details: Ayrıntılar
+        merchant_label: Tüccar
+        merchant_placeholder: Satıcı seçin
+        note_label: Notlar
+        note_placeholder: Seçilen işlemlere uygulanacak bir not girin
+        overview: Genel bakış
+        save: Kaydet
+      bulk_update:
+        success: "%{count} işlemler güncellendi"
+      form:
+        account: Hesap
+        account_prompt: Hesap Seçin
+        amount: Tutar
+        category: Kategori
+        category_prompt: Kategori Seçin
+        date: Tarih
+        description: Açıklama
+        description_placeholder: İşlemi tanımlayın
+        expense: Harcama
+        income: Gelir
+        submit: İşlem ekle
+        transfer: Transfer
+      new:
+        new_transaction: Yeni işlem
+      show:
+        account_label: Hesap
+        amount: Tutar
+        category_label: Kategori
+        date_label: Tarih
+        delete: Sil
+        delete_subtitle: Bu işlem kalıcı olarak silinir, tarihsel bakiyelerinizi etkiler ve geri alınamaz.
+        delete_title: İşlemi sil
+        details: Ayrıntılar
+        merchant_label: Tüccar
+        name_label: İsim
+        nature: Tür
+        none: "(yok)"
+        note_label: Notlar
+        note_placeholder: Not girin
+        overview: Genel bakış
+        settings: Ayarlar
+        tags_label: Etiketler
+        uncategorized: "(sınıflandırılmamış)"
+    transfer_matches:
+      create:
+        success: Transfer oluşturuldu

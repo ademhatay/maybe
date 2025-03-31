@@ -1,0 +1,74 @@
+---
+en:
+  import:
+    cleans:
+      show:
+        description: Aşağıdaki tabloda verilerinizi düzenleyin. Kırmızı hücreler geçersizdir.
+        errors_notice: Verilerinizde hatalar var. Hatanın ayrıntılarını görmek için üzerine gelin.
+        title: Verilerinizi temizleyin
+    configurations:
+      mint_import:
+        date_format_label: Tarih formatı
+      show:
+        description: CSV'nizdeki her alanla eşleşen sütunları seçin.
+        title: İçe aktarmanızı yapılandırın
+      trade_import:
+        date_format_label: Tarih formatı
+      transaction_import:
+        date_format_label: Tarih formatı
+    confirms:
+      mappings:
+        create_account: Hesap oluştur
+        csv_mapping_label: CSV'deki "%{mapping}"
+        maybe_mapping_label: Belki’deki "%{mapping}"
+        no_accounts: Henüz hesabınız yok. CSV’nizdeki (atanmamış) satırlar için kullanabileceğimiz bir hesap oluşturun veya Temizleme adımına geri dönerek kullanabileceğimiz bir hesap adı girin.
+        rows_label: Satırlar
+        unassigned_account: Atanmamış satırlar için yeni bir hesap oluşturmanız gerekiyor mu?
+      show:
+        account_mapping_description: İçe aktardığınız dosyanın tüm hesaplarını Belki’deki mevcut hesaplara atayın. Ayrıca yeni hesaplar ekleyebilir veya bunları kategorize etmeden bırakabilirsiniz.
+        account_mapping_title: Hesaplarınızı atayın
+        account_type_mapping_description: İçe aktardığınız dosyanın tüm hesap türlerini Belki’nin hesap türleriyle eşleştirin.
+        account_type_mapping_title: Hesap türlerinizi atayın
+        category_mapping_description: İçe aktardığınız dosyanın tüm kategorilerini Belki’deki mevcut kategorilere atayın. Ayrıca yeni kategoriler ekleyebilir veya bunları kategorize etmeden bırakabilirsiniz.
+        category_mapping_title: Kategorilerinizi atayın
+        tag_mapping_description: İçe aktardığınız dosyanın tüm etiketlerini Belki’deki mevcut etiketlere atayın. Ayrıca yeni etiketler ekleyebilir veya bunları kategorize etmeden bırakabilirsiniz.
+        tag_mapping_title: Etiketlerinizi atayın
+    uploads:
+      show:
+        description: Aşağıya CSV dosyanızı yapıştırın veya yükleyin. Başlamadan önce aşağıdaki tabloda bulunan talimatları inceleyin.
+        instructions_1: Aşağıda içe aktarma için kullanılabilecek sütunlara sahip örnek bir CSV bulunmaktadır.
+        instructions_2: CSV dosyanızda bir başlık satırı olmalıdır.
+        instructions_3: Sütunlarınıza istediğiniz ismi verebilirsiniz. Bunları sonraki bir adımda eşleştireceksiniz.
+        instructions_4: Yıldız (*) ile işaretlenmiş sütunlar zorunludur.
+        instructions_5: Sayılarda virgül, para birimi sembolleri ve parantez kullanmayın.
+        title: Verilerinizi içe aktarın
+  imports:
+    empty:
+      message: Henüz içe aktarma yok.
+      new: Yeni içe aktarma
+    import:
+      complete: Tamamlandı
+      delete: Sil
+      failed: Başarısız
+      in_progress: Devam ediyor
+      label: "%{type}: %{datetime}"
+      revert_failed: Geri alma başarısız
+      reverting: Geri alınıyor
+      uploading: Satırlar işleniyor
+      view: Görüntüle
+    index:
+      imports: İçe aktarmalar
+      new: Yeni içe aktarma
+      title: İçe aktarmalar
+    new:
+      description: CSV aracılığıyla çeşitli veri türlerini manuel olarak içe aktarabilir veya Mint gibi içe aktarma şablonlarımızdan birini kullanabilirsiniz.
+      import_accounts: Hesapları içe aktar
+      import_mint: Mint'ten içe aktar
+      import_portfolio: Yatırımları içe aktar
+      import_transactions: İşlemleri içe aktar
+      resume: "%{type} devam ettir"
+      sources: Kaynaklar
+      title: Yeni CSV İçe Aktarma
+    ready:
+      description: Bu içe aktarmayı yayımladıktan sonra hesabınıza eklenecek yeni öğelerin özeti aşağıda verilmiştir.
+      title: İçe aktarma verilerinizi onaylayın

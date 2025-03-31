@@ -1,0 +1,7 @@
+---
+en:
+  cryptos:
+    edit:
+      edit: Düzenle %{account}
+    new:
+      title: Hesap bakiyesini girin

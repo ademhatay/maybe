@@ -1,0 +1,22 @@
+---
+en:
+  loans:
+    edit:
+      edit: "%{account} Düzenle"
+    form:
+      interest_rate: Faiz oranı
+      interest_rate_placeholder: '5.25'
+      rate_type: Oran türü
+      term_months: Vade (ay)
+      term_months_placeholder: '360'
+    new:
+      title: Kredi detaylarını girin
+    overview:
+      interest_rate: Faiz oranı
+      monthly_payment: Aylık ödeme
+      not_applicable: Uygulanmaz
+      original_principal: İlk anapara
+      remaining_principal: Kalan anapara
+      term: Term
+      type: Type
+      unknown: Bilinmiyor

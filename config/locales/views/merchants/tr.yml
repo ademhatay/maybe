@@ -1,0 +1,26 @@
+---
+en:
+  merchants:
+    create:
+      error: 'Tüccar oluşturma hatası: %{error}'
+      success: Yeni tüccar başarıyla oluşturuldu
+    destroy:
+      success: Tüccar silindi
+    edit:
+      title: Tüccar düzenle
+    form:
+      name_placeholder: Tüccar adı
+    index:
+      empty: Henüz tüccar yok
+      new: Yeni tüccar
+      title: Tüccarlar
+    merchant:
+      confirm_accept: Tüccarı sil
+      confirm_body: Bu tüccarı silmek istediğinizden emin misiniz? Bu tüccarı kaldırmak, tüm ilişkili işlemleri bağlantısını keser ve raporlamanızı etkileyebilir.
+      confirm_title: Tüccarı sil?
+      delete: Tüccarı sil
+      edit: Tüccarı düzenle
+    new:
+      title: Yeni tüccar
+    update:
+      success: Tüccar başarıyla güncellendi

@@ -1,0 +1,8 @@
+---
+en:
+  password_mailer:
+    password_reset:
+      cta: Şifrenizi sıfırlayın
+      ignore_if_not_requested: Bu isteği siz yapmadıysanız, bu e-postayı görmezden gelebilirsiniz.
+      request_made: Maybe şifrenizi sıfırlamak için bir istek yapıldı. Bağlantıya tıklayarak sıfırlayın.
+      subject: 'Defter-e: Şifrenizi sıfırlayın'

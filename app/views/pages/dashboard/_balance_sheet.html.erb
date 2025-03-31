@@ -94,8 +94,8 @@
       <% else %>
         <div class="py-20 flex flex-col items-center">
           <%= lucide_icon classification_group.icon, class: "w-6 h-6 shrink-0 text-secondary" %>
-          <p class="text-primary text-sm font-medium mb-1 mt-4">No <%= classification_group.display_name %></p>
-          <p class="text-secondary text-sm max-w-xs text-center"><%= "You have no #{classification_group.display_name}" %></p>
+          <p class="text-primary text-sm font-medium mb-1 mt-4"><%= classification_group.display_name %> Yok</p>
+          <p class="text-secondary text-sm max-w-xs text-center"><%= " #{classification_group.display_name} bulunamadı" %></p>
         </div>
       <% end %>
     </div>

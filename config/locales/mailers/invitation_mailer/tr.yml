@@ -1,0 +1,5 @@
+---
+en:
+  invitation_mailer:
+    invite_email:
+      subject: "%{inviter} sizi defter-e'ye katılmaya davet etti!"

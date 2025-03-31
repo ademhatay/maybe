@@ -1,0 +1,12 @@
+---
+en:
+  users:
+    destroy:
+      success: Hesabınız silindi.
+    update:
+      email_change_failed: Email adresini değiştirme işlemi başarısız oldu.
+      email_change_initiated: Lütfen yeni email adresinizi onaylamak için gelen kutunuzu kontrol edin.
+      success: Profiliniz güncellendi.
+    reset:
+      success: Hesabınız sıfırlandı. Verileriniz arka planda silinecektir.
+      unauthorized: Yetkiniz yok.

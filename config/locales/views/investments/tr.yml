@@ -1,0 +1,18 @@
+---
+en:
+  investments:
+    edit:
+      edit: Düzenle %{account}
+    form:
+      none: Yok
+      subtype_prompt: Hesap türünü seçin
+    new:
+      title: Hesap bakiyesini girin
+    show:
+      chart_title: Toplam değer
+    value_tooltip:
+      cash: Nakit
+      holdings: Hisse senetleri
+      total: Portföy bakiyesi
+      total_value_tooltip: Portföy bakiyesinin toplamı, aracılık nakit (işlem için mevcut) ve
+        hisse senetlerinizin mevcut piyasa değerinin toplamıdır.

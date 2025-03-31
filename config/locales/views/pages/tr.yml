@@ -1,0 +1,10 @@
+---
+en:
+  pages:
+    changelog:
+      title: Yenilikler
+    dashboard:
+      no_account_empty_state:
+        new_account: Yeni hesap
+        no_account_subtitle: Henüz hesap eklenmediği için görüntülenecek veri yok. İlk hesaplarınızı ekleyerek gösterge paneli verilerini görüntülemeye başlayın.
+        no_account_title: Henüz hesap yok

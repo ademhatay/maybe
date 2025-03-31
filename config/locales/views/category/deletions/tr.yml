@@ -1,0 +1,14 @@
+---
+en:
+  category:
+    deletions:
+      create:
+        success: İşlem kategorisi başarıyla silindi
+      new:
+        category: Kategori
+        delete_and_leave_uncategorized: “%{category_name}” ifadesini silin ve kategorize edilmemiş olarak bırakın
+        delete_and_recategorize: “%{category_name}” ifadesini silin ve yeni kategori atan
+        delete_category: Kategoriyi sil?
+        explanation: Bu kategoriyi silmek, "%{category_name}" adlı tüm işlemleri
+          kategorize etmeyecektir. Bunun yerine, yeni bir kategori atayabilirsiniz.
+        replacement_category_prompt: Kategori seç

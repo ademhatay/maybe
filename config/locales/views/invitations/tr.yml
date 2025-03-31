@@ -1,0 +1,19 @@
+---
+en:
+  invitations:
+    create:
+      failure: Davet gönderirken bir sorun oluştu
+      success: Davet başarıyla gönderildi
+    destroy:
+      failure: Davet kaldırılırken bir sorun oluştu.
+      not_authorized: Davetleri yönetme yetkiniz yok.
+      success: Davet başarıyla kaldırıldı.
+    new:
+      email_label: Email Adresi
+      email_placeholder: Email adresini girin
+      role_admin: Yönetici
+      role_label: Rol
+      role_member: Üye
+      submit: Davet gönder
+      subtitle: Defter-e'deki aile hesabınıza katılmak için davetiye gönderin
+      title: Birisi Davet Et

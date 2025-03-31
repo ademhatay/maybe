@@ -1,0 +1,25 @@
+---
+en:
+  vehicles:
+    edit:
+      edit: "%{account} Düzenle"
+    form:
+      make: Marka
+      make_placeholder: Toyota
+      mileage: Kilometre
+      mileage_placeholder: '15000'
+      mileage_unit: Birim
+      model: Model
+      model_placeholder: Corolla
+      year: Yıl
+      year_placeholder: '2023'
+    new:
+      title: Araç detaylarını girin
+    overview:
+      current_price: Güncel Fiyat
+      make_model: Marka ve Model
+      mileage: Kilometre
+      purchase_price: Alış Fiyatı
+      trend: Eğilim
+      unknown: Bilinmiyor
+      year: Yıl
