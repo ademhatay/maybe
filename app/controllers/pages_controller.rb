@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     @balance_sheet = Current.family.balance_sheet
     @accounts = Current.family.accounts.active.with_attached_logo
 
-    @breadcrumbs = [ [ "Home", root_path ], [ "Dashboard", nil ] ]
+    @breadcrumbs = [ [ "Anasayfa", root_path ], [ "Panel", nil ] ]
   end
 
   def changelog

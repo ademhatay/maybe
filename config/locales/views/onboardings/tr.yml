@@ -1,0 +1,27 @@
+---
+en:
+  onboardings:
+    header:
+      sign_out: Çıkış yap
+    preferences:
+      currency: Para birimi
+      date_format: Tarih formatı
+      example: Örnek hesap
+      locale: Dil
+      preview: Örnek hesapta verilerin nasıl görüntüleneceğini görüntüleyin.
+      submit: Tamamla
+      subtitle: Tercihlerinizi yapalım.
+      title: Tercihlerinizi yapalım
+    profile:
+      country: Ülke
+      first_name: İsim
+      household_name: Şirket adı
+      last_name: Soyadı
+      profile_image: Profil resmi
+      submit: Devam et
+      subtitle: Profilinizi tamamlayalım.
+      title: Temellerini ayarlayalım
+    show:
+      message: Burada olduğuna çok sevindik. Sonraki adımda profilinizi tamamlayacak ve ardından tüm ayarlarınızı yapacaksınız.
+      setup: Hesabınızı ayarlayın
+      title: Defter-e ile tanışın

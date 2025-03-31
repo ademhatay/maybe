@@ -50,7 +50,7 @@ class StyledFormBuilder < ActionView::Helpers::FormBuilder
 
   def submit(value = nil, options = {})
     default_options = {
-      data: { turbo_submits_with: "Submitting..." },
+      data: { turbo_submits_with: "Yükleniyor..." },
       class: "btn btn--primary w-full"
     }
 

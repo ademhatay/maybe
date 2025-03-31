@@ -1,0 +1,37 @@
+---
+en:
+  account:
+    holdings:
+      cash:
+        brokerage_cash: Aracı kurum nakit
+      destroy:
+        success: Yatırım silindi
+      holding:
+        per_share: hisse başına
+        shares: "%{qty} hisse"
+      index:
+        cost: tutar
+        holdings: Yatırımlar
+        name: isim
+        new_holding: Yeni işlem
+        no_holdings: Gösterilecek yatırım yok.
+        return: toplam getiri
+        weight: ağırlık
+      missing_price_tooltip:
+        description: Bu yatırımda eksik değerler var ve getirilerini veya değerini hesaplayamadık.
+        missing_data: Eksik veri
+      show:
+        avg_cost_label: Ortalama Maliyet
+        current_market_price_label: Güncel Piyasa Fiyatı
+        delete: Sil
+        delete_subtitle: Bu, yatırımı ve bu hesapta ilişkili tüm işlemlerinizi silecektir.
+          Bu işlem geri alınamaz.
+        delete_title: Yatırımı sil
+        history: Geçmiş
+        overview: Genel Bakış
+        portfolio_weight_label: Portföy Ağırlığı
+        settings: Ayarlar
+        ticker_label: Ticker
+        trade_history_entry: "%{qty} hisse %{security} için %{price}"
+        trend_label: Eğilim
+        unknown: Bilinmeyen

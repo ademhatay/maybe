@@ -1,0 +1,18 @@
+---
+en:
+  activerecord:
+    errors:
+      models:
+        transfer:
+          attributes:
+            base:
+              inflow_cannot_be_in_multiple_transfers: Giriş işlemi birden fazla transferin parçası olamaz
+              must_be_from_different_accounts: Transfer farklı hesaplar arasında olmalıdır
+              must_be_from_same_family: Transfer aynı aileden olmalıdır
+              must_be_within_date_range: Transfer işlem tarihleri birbirinden en fazla 4 gün içinde olmalıdır
+              must_have_opposite_amounts: Transfer işlemleri zıt tutarlara sahip olmalıdır
+              must_have_single_currency: Transfer tek bir para birimine sahip olmalıdır
+              outflow_cannot_be_in_multiple_transfers: Çıkış işlemi birden fazla transferin parçası olamaz
+  transfer:
+    name: "%{to_account}'a transfer"
+    payment_name: "%{to_account}'a ödeme" 

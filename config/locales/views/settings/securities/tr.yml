@@ -1,0 +1,10 @@
+---
+en:
+  settings:
+    securities:
+      show:
+        disable_mfa: 2FA'yı devre dışı bırak
+        disable_mfa_confirm: 2FA'yı devre dışı bırakmak istediğinize emin misiniz? Bu, hesabınızı daha az güvenli hale getirecektir.
+        enable_mfa: 2FA'yı etkinleştir
+        mfa_description: Hesabınıza giriş yaparken kimlik doğrulayıcı uygulamanızdan bir kod gerektirerek hesabınıza ekstra bir güvenlik katmanı ekleyin
+        mfa_title: İki Aşamalı Kimlik Doğrulama

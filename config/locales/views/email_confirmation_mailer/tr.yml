@@ -1,0 +1,9 @@
+---
+en:
+  email_confirmation_mailer:
+    confirmation_email:
+      body: "Bu bağlantı %{hours} saat sonra sona erecek."
+      cta: Email değişikliğini onayla
+      expiry_notice: "Bu bağlantı %{hours} saat sonra sona erecek."
+      greeting: Merhaba!
+      subject: 'Defter-e: Email değişikliğini onayla'

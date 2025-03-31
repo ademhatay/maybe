@@ -3,13 +3,13 @@ en:
   account:
     entries:
       create:
-        success: Entry created
+        success: İşlem oluşturuldu
       destroy:
-        success: Entry deleted
+        success: İşlem silindi
       empty:
-        description: Try adding an entry, editing filters or refining your search
-        title: No entries found
+        description: Bir işlem ekleyin, filtreleri düzenleyin veya arama sonuçlarınızı sınırlayın
+        title: İşlem bulunamadı
       loading:
-        loading: Loading entries...
+        loading: İşlemler yükleniyor...
       update:
-        success: Entry updated
+        success: İşlem güncellendi

@@ -1,7 +1,7 @@
 class Import < ApplicationRecord
   TYPES = %w[TransactionImport TradeImport AccountImport MintImport].freeze
   SIGNAGE_CONVENTIONS = %w[inflows_positive inflows_negative]
-  SEPARATORS = [ [ "Comma (,)", "," ], [ "Semicolon (;)", ";" ] ].freeze
+  SEPARATORS = [ [ "Virgül (,)", "," ], [ "Noktalı Virgül (;)", ";" ] ].freeze
 
   NUMBER_FORMATS = {
     "1,234.56" => { separator: ".", delimiter: "," },  # US/UK/Asia

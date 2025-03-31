@@ -1,0 +1,6 @@
+---
+en:
+  invite_codes:
+    index:
+      invite_code_description: Yeni bir kod oluşturun ve burada görüntülenmesini sağlayın. Kullanılan kodlar artık görüntülenmeyecektir.
+      no_invite_codes: Görüntülenecek kod yok

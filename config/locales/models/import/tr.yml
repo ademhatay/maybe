@@ -1,0 +1,13 @@
+---
+en:
+  activerecord:
+    attributes:
+      import:
+        currency: Para Birimi
+        number_format: Sayı Formatı
+    errors:
+      models:
+        import:
+          attributes:
+            raw_file_str:
+              invalid_csv_format: geçerli bir CSV formatı değil 

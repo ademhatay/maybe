@@ -1,0 +1,32 @@
+---
+en:
+  properties:
+    edit:
+      edit: "%{account} Düzenle"
+    form:
+      address_line1: Sokak adresi
+      address_line1_placeholder: Sokak, Mahalle, Cadde, Sokak vb.
+      area: Yaşam alanı
+      area_placeholder: '2000'
+      area_unit: Ölçü birimi
+      country: Ülke
+      country_placeholder: Türkiye
+      locality: Şehir
+      locality_placeholder: İstanbul
+      none: Yok
+      postal_code: ZIP/Postal code
+      postal_code_placeholder: '34000'
+      region: State/Province
+      region_placeholder: İstanbul
+      subtype_prompt: Özellik türü seçin
+      year_built: Yılında yapıldı
+      year_built_placeholder: '2000'
+    new:
+      title: Özellik detaylarını girin
+    overview:
+      living_area: Yaşam alanı
+      market_value: Piyasa değeri
+      purchase_price: Alış fiyatı
+      trend: Trend
+      unknown: Bilinmiyor
+      year_built: Yılında yapıldı

@@ -1,5 +1,5 @@
 ---
-tr:
+en:
   activerecord:
     errors:
       messages:
