@@ -21,6 +21,10 @@ class Property < ApplicationRecord
       "home"
     end
 
+    def display_name
+      "Varlık"
+    end
+
     def color
       "#06AED4"
     end

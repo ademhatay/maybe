@@ -8,7 +8,7 @@ class Depository < ApplicationRecord
 
   class << self
     def display_name
-      "Cash"
+      "Nakit"
     end
 
     def color

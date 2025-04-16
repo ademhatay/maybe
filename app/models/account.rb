@@ -39,14 +39,14 @@ class Account < ApplicationRecord
       transaction do
         # Create 2 valuations for new accounts to establish a value history for users to see
         account.entries.build(
-          name: "Current Balance",
+          name: "Şimdiki bakiye",
           date: Date.current,
           amount: account.balance,
           currency: account.currency,
           entryable: Valuation.new
         )
         account.entries.build(
-          name: "Initial Balance",
+          name: "Başlangıç bakiyesi",
           date: 1.day.ago.to_date,
           amount: initial_balance,
           currency: account.currency,

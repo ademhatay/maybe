@@ -10,6 +10,10 @@ class OtherLiability < ApplicationRecord
       "minus"
     end
 
+    def display_name
+      "Diğer Borç"
+    end
+
     def classification
       "liability"
     end

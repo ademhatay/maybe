@@ -13,6 +13,10 @@ class CreditCard < ApplicationRecord
     def classification
       "liability"
     end
+
+    def display_name
+      "Kredi Kartı"
+    end
   end
 
   def available_credit_money

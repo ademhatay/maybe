@@ -25,6 +25,10 @@ class Investment < ApplicationRecord
       "asset"
     end
 
+    def display_name
+      "Yatırım"
+    end
+
     def icon
       "line-chart"
     end

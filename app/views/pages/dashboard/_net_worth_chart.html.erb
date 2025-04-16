@@ -8,9 +8,9 @@
         <%= series.current.format %>
       </p>
       <% if series.trend.nil? %>
-        <p class="text-sm text-secondary">Data not available for the selected period</p>
+        <p class="text-sm text-secondary">Seçilen aralıkta veri yok</p>
       <% elsif series.trend.direction.flat? %>
-        <p class="text-sm text-secondary">No change vs. prior period</p>
+        <p class="text-sm text-secondary">Seçilen aralıkta değişim yok</p>
       <% else %>
         <div class="flex items-center gap-2">
           <%= render partial: "shared/trend_change", locals: { trend: series.trend } %>
@@ -32,6 +32,6 @@
     data-time-series-chart-data-value="<%= series.to_json %>"></div>
 <% else %>
   <div class="w-full h-full flex items-center justify-center">
-    <p class="text-secondary text-sm">No data available for the selected period.</p>
+    <p class="text-secondary text-sm">Seçilen aralıkta veri yok</p>
   </div>
 <% end %>

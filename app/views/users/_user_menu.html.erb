@@ -24,7 +24,7 @@
     <% if self_hosted? %>
       <div class="p-3">
         <p class="text-sm">
-          <span class="font-medium text-primary">Version:</span>
+          <span class="font-medium text-primary">Versiyon:</span>
           <%= link_to Maybe.version.to_release_tag, "https://github.com/maybe-finance/maybe/releases/tag/#{Maybe.version.to_release_tag}", target: "_blank", class: "hover:underline" %>
 
           <% if Maybe.commit_sha.present? %>
@@ -37,17 +37,7 @@
     <div class="p-1">
       <%= link_to settings_profile_path(return_to: request.fullpath), class: "btn btn--ghost flex gap-2 items-center" do %>
         <%= lucide_icon("settings", class: "w-5 h-5 text-secondary shrink-0") %>
-        <span class="text-primary text-sm">Settings</span>
-      <% end %>
-
-      <%= link_to changelog_path, class: "btn btn--ghost flex gap-2 items-center" do %>
-        <%= lucide_icon("box", class: "w-5 h-5 text-secondary shrink-0") %>
-        <span class="text-primary text-sm">Changelog</span>
-      <% end %>
-
-      <%= link_to feedback_path, class: "btn btn--ghost flex gap-2 items-center" do %>
-        <%= lucide_icon("megaphone", class: "w-5 h-5 text-secondary shrink-0") %>
-        <span class="text-primary text-sm">Feedback</span>
+        <span class="text-primary text-sm">Ayarlar</span>
       <% end %>
 
       <% if self_hosted? %>
@@ -58,7 +48,7 @@
       <% else %>
         <%= link_to "mailto:hello@maybefinance.com", class: "btn btn--ghost flex gap-2 items-center", onclick: "Intercom('showNewMessage'); return false;" do %>
           <%= lucide_icon("message-square-more", class: "w-5 h-5 text-secondary shrink-0") %>
-          <span class="text-primary text-sm">Contact</span>
+          <span class="text-primary text-sm">İletişim</span>
         <% end %>
       <% end %>
     </div>

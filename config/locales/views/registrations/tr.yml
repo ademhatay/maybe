@@ -21,3 +21,6 @@ en:
       title: Hesabınızı oluşturun
       welcome_body: Başlamak için yeni bir hesap oluşturmalısınız. Ardından uygulama içinde ek ayarları yapılandırabileceksiniz.
       welcome_title:  "defter-e hoş geldiniz!"
+      password: Şifre
+      password_confirmation: Şifre tekrar
+      invite_code: Davet kodu

@@ -10,6 +10,10 @@ class OtherAsset < ApplicationRecord
       "plus"
     end
 
+    def display_name
+      "Diğer varlık"
+    end
+
     def classification
       "asset"
     end

@@ -24,6 +24,10 @@ class Vehicle < ApplicationRecord
       "car-front"
     end
 
+    def display_name
+      "Araç"
+    end
+
     def classification
       "asset"
     end

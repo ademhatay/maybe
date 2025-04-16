@@ -30,6 +30,10 @@ class Loan < ApplicationRecord
       "hand-coins"
     end
 
+    def display_name
+      "Kredi"
+    end
+
     def classification
       "liability"
     end

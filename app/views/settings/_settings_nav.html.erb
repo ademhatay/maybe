@@ -66,19 +66,6 @@
       </ul>
     </section>
 
-    <section class="space-y-2">
-      <div class="flex items-center gap-2 px-3">
-        <h3 class="uppercase text-secondary font-medium text-xs"><%= t(".other_section_title") %></h3>
-        <div class="h-px bg-alpha-black-100 w-full"></div>
-      </div>
-      <ul class="space-y-1">
-        <li>
-          <%= render "settings/settings_nav_item", name: t(".whats_new_label"), path: changelog_path, icon: "box" %>
-          <%= render "settings/settings_nav_item", name: t(".feedback_label"), path: feedback_path, icon: "megaphone" %>
-        </li>
-      </ul>
-    </section>
-
     <section>
       <%= button_to session_path(Current.session), method: :delete, class: "flex items-center gap-2 btn btn--ghost text-destructive w-full" do %>
         <%= lucide_icon("log-out", class: "w-5 h-5 shrink-0") %>

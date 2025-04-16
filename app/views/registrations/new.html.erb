@@ -35,7 +35,7 @@
   <%= form.password_field :password, autocomplete: "new-password", required: "required", label: t(".password"), maxlength: 72 %>
   <%= form.password_field :password_confirmation, autocomplete: "new-password", required: "required", label: t(".password_confirmation") %>
   <% if invite_code_required? && !@invitation %>
-    <%= form.text_field :invite_code, required: "required", label: true, value: params[:invite] %>
+    <%= form.text_field :invite_code, required: "required", label: t(".invite_code"), value: params[:invite] %>
   <% end %>
   <%= form.hidden_field :invitation, value: @invitation&.token %>
   <%= form.submit t(".submit") %>

@@ -14,11 +14,11 @@
 
             <% if controller_name == "sessions" %>
               <p class="text-sm text-center">
-                <%= tag.span t(".no_account"), class: "text-secondary" %> <%= link_to t(".sign_up"), new_registration_path, class: "font-medium text-primary hover:underline transition" %>
+                <%= tag.span "Hesabınız yok mu?", class: "text-secondary" %> <%= link_to "Kayıt ol", new_registration_path, class: "font-medium text-primary hover:underline transition" %>
               </p>
             <% elsif controller_name == "registrations" %>
               <p class="text-sm text-center text-gray-600">
-                <%= t(".existing_account") %> <%= link_to t(".sign_in"), new_session_path, class: "font-medium text-primary hover:underline transition" %>
+                <%=  "Zaten bir hesabınız var mı?" %> <%= link_to "Giriş yap", new_session_path, class: "font-medium text-primary hover:underline transition" %>
               </p>
             <% end %>
           </div>

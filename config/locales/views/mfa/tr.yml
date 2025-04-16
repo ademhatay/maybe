@@ -3,7 +3,7 @@ en:
   mfa:
     backup_codes:
       backup_codes_description: Her kod yalnızca bir kez kullanılabilir. Bu kodları güvenli ve emniyetli
-        bir yerde saklayın.
+        bir yerde saklayın.c
       backup_codes_title: Yedek Kodlarınız
       continue: Güvenlik Ayarlarına Devam Et
       description: Bu yedek kodları güvenli bir yerde saklayın - kimlik doğrulayıcı uygulamanıza erişiminizi kaybederseniz

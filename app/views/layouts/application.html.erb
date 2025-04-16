@@ -90,42 +90,7 @@
         <% end %>
       <% end %>
 
-      <%# AI chat sidebar %>
-      <%= tag.div id: "chat-container",
-                style: "width: #{sidebar_config.dig(:right_panel, :initial_width)}px; overflow: #{sidebar_config.dig(:right_panel, :overflow)}",
-                class: class_names("flex flex-col justify-between shrink-0 transition-all duration-300 hidden lg:block"),
-                data: { controller: "chat hotkey", sidebar_target: "rightPanel", turbo_permanent: true } do %>
-
-        <% if Current.user.ai_enabled? %>
-          <%= turbo_frame_tag chat_frame, src: chat_view_path(@chat), loading: "lazy", class: "h-full" do %>
-            <div class="flex justify-center items-center h-full">
-              <%= lucide_icon("loader-circle", class: "w-5 h-5 text-secondary animate-spin") %>
-            </div>
-          <% end %>
-        <% else %>
-          <%= render "chats/ai_consent" %>
-        <% end %>
-      <% end %>
-    </div>
-
-    <nav class="lg:hidden bg-container shrink-0 z-10 pb-2">
-      <ul class="flex items-center justify-around gap-1">
-        <li>
-          <%= render "layouts/sidebar/nav_item", name: "Home", path: root_path, icon_key: "pie-chart" %>
-        </li>
-
-        <li>
-          <%= render "layouts/sidebar/nav_item", name: "Transactions", path: transactions_path, icon_key: "credit-card" %>
-        </li>
-
-        <li>
-          <%= render "layouts/sidebar/nav_item", name: "Budgets", path: budgets_path, icon_key: "map" %>
-        </li>
-
-        <li>
-          <%= render "layouts/sidebar/nav_item", name: "Assistant", path: chats_path, icon_key: "bot" %>
-        </li>
-      </ul>
-    </nav>
+    <%# AI chat sidebar %>
+   
   </div>
 <% end %>

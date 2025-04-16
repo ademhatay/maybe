@@ -56,7 +56,7 @@ en:
         first_name: İsim
         household_form_input_placeholder: Şirket adını girin
         household_form_label: Şirket adı
-        household_subtitle: Aile üyelerinizi, partnerlerinizi ve diğer kişileri davet edin. Davetliler şirketinize giriş yapabilir ve paylaşılan hesaplarınıza erişebilir.
+        household_subtitle: Çalışanlarınızı davet edin. Davetliler şirketinize giriş yapabilir ve paylaşılan hesaplarınıza erişebilir.
         household_title: Şirket
         invitation_link: Davet bağlantısı
         invite_member: Üye davet et

@@ -12,14 +12,14 @@
           <%= icon "sparkles" %>
         </span>
 
-        Template configuration found
+        Şablon yapılandırması bulundu
       </h3>
 
-      <p class="text-sm text-secondary">We found a configuration from a previous import for this account.  Would you like to apply it to this import?</p>
+      <p class="text-sm text-secondary">Önceki bir içe aktarma için bu hesap için bir yapılandırma bulduk. Bu içe aktarma için uygulamak ister misiniz?</p>
 
       <div class="mt-4 flex gap-2 items-center">
-        <%= link_to "Manually configure", import_configuration_path(@import), class: "btn btn--outline" %>
-        <%= button_to "Apply template", apply_template_import_path(@import), class: "btn btn--primary", method: :put, data: { turbo_frame: :_top } %>
+        <%= link_to "Elle yapılandır", import_configuration_path(@import), class: "btn btn--outline" %>
+        <%= button_to "Şablonu uygula", apply_template_import_path(@import), class: "btn btn--primary", method: :put, data: { turbo_frame: :_top } %>
       </div>
     </div>
   </div>
@@ -36,6 +36,6 @@
   </div>
 
   <div class="mx-auto max-w-5xl my-12">
-    <%= render "imports/table", headers: @import.csv_headers, rows: @import.csv_sample, caption: "Sample data from your uploaded CSV" %>
+    <%= render "imports/table", headers: @import.csv_headers, rows: @import.csv_sample, caption: "Yüklenen CSV'nin örnek verileri" %>
   </div>
 <% end %>

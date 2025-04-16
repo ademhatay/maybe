@@ -1,12 +1,12 @@
 <%# locals: (import:) %>
 
 <% steps = [
-  { name: "Upload", path: import_upload_path(import), is_complete: import.uploaded?, step_number: 1 },
-  { name: "Configure", path: import_configuration_path(import), is_complete: import.configured?, step_number: 2 },
-  { name: "Clean", path: import_clean_path(import), is_complete: import.cleaned?, step_number: 3 },
-  { name: "Map", path: import_confirm_path(import), is_complete: import.publishable?, step_number: 4 },
-  { name: "Confirm", path: import_path(import), is_complete: import.complete?, step_number: 5 }
-].reject { |step| step[:name] == "Map" && import.mapping_steps.empty? } %>
+  { name: "Yükle", path: import_upload_path(import), is_complete: import.uploaded?, step_number: 1 },
+  { name: "Yapılandır", path: import_configuration_path(import), is_complete: import.configured?, step_number: 2 },
+  { name: "Temizle", path: import_clean_path(import), is_complete: import.cleaned?, step_number: 3 },
+  { name: "Onayla", path: import_confirm_path(import), is_complete: import.publishable?, step_number: 4 },
+  { name: "Tamamla", path: import_path(import), is_complete: import.complete?, step_number: 5 }
+].reject { |step| step[:name] == "Onayla" && import.mapping_steps.empty? } %>
 
 <ul class="flex items-center gap-2">
   <% steps.each_with_index do |step, idx| %>

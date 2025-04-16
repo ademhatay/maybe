@@ -2,43 +2,43 @@
 en:
   transactions:
     header:
-      edit_categories: Edit categories
-      edit_imports: Edit imports
-      edit_merchants: Edit merchants
-      edit_tags: Edit tags
-      import: Import
+      edit_categories: Kategorileri düzenle
+      edit_imports: İçe aktarma yap
+      edit_merchants: Ticari ortakları düzenle
+      edit_tags: Etiketleri düzenle
+      import: İçe aktarma yap
     index:
-      transaction: transaction
-      transactions: transactions
+      transaction: işlem
+      transactions: işlemler
     searches:
       filters:
         amount_filter:
-          equal_to: Equal to
-          greater_than: Greater than
-          less_than: Less than
+          equal_to: Eşit
+          greater_than: Büyük
+          less_than: Küçük
           placeholder: '0'
         badge:
-          expense: Expense
-          income: Income
-          on_or_after: on or after %{date}
-          on_or_before: on or before %{date}
+          expense: Masraf
+          income: Gelir
+          on_or_after: "%{date} veya sonrası"
+          on_or_before: "%{date} veya öncesi"
           transfer: Transfer
         type_filter:
-          expense: Expense
-          income: Income
+          expense: Masraf
+          income: Gelir
           transfer: Transfer
       menu:
-        account_filter: Account
-        amount_filter: Amount
-        apply: Apply
-        cancel: Cancel
-        category_filter: Category
-        clear_filters: Clear filters
-        date_filter: Date
-        merchant_filter: Merchant
-        tag_filter: Tag
-        type_filter: Type
+        account_filter: Hesap
+        amount_filter: Tutar
+        apply: Uygula
+        cancel: İptal
+        category_filter: Kategori
+        clear_filters: Filtreleri temizle
+        date_filter: Tarih
+        merchant_filter: Ticari ortak
+        tag_filter: Etiket
+        type_filter: Tip
       search:
-        equal_to: equal to
-        greater_than: greater than
-        less_than: less than
+        equal_to: eşit
+        greater_than: büyük
+        less_than: küçük

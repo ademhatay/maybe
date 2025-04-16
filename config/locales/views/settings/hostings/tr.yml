@@ -1,0 +1,34 @@
+---
+en:
+  settings:
+    hostings:
+      invite_code_settings:
+        description: Her yeni kullanıcı, defter-e.com'a sadece davet kodu aracılığıyla katılabilir
+        email_confirmation_description: Etkinleştirildiğinde, kullanıcıların adresini değiştirirken e-posta adresini onaylamaları gerekir.
+        email_confirmation_title: E-posta onayı gerekli
+        generate_tokens: Yeni kod oluştur
+        generated_tokens: Oluşturulan kodlar
+        title: Davet kodu gerektir
+      show:
+        general: Genel Ayarlar
+        invites: Davet Kodları
+        title: Sunucu Yapılandırması
+        danger_zone: Tehlikeli Alan
+        clear_cache: Veri önbelleğini temizle
+        clear_cache_warning: Veri önbelleğini temizlemek, tüm döviz kurlarını, güvenlik fiyatlarını, hesap bakiyelerini ve diğer verileri kaldıracaktır. Bu işlem geri alınamaz.
+        confirm_clear_cache:
+          title: Veri önbelleğini temizle?
+          body: Veri önbelleğini temizlemek istediğinize emin misiniz? Bu, tüm döviz kurlarını, güvenlik fiyatlarını, hesap bakiyelerini ve diğer verileri kaldıracaktır. Bu işlem geri alınamaz.
+      synth_settings:
+        api_calls_used: "%{used} / %{limit} API çağrısı kullanıldı (%{percentage})"
+        description: Synth API anahtarınızı girin
+        label: API Anahtarı
+        placeholder: Buraya API anahtarınızı girin
+        plan: "%{plan} plan"
+        title: Synth Ayarları
+      update:
+        failure: Geçersiz ayar değeri
+        success: Ayarlar güncellendi
+      clear_cache:
+        cache_cleared: Veri önbelleği temizlendi. Bu işlem birkaç dakika sürebilir.
+      not_authorized: Bu işlemi gerçekleştirmek için yeterli yetkiniz yok
